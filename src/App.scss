@@ -1,0 +1,71 @@
+$inputBorder: 5px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.inputsContainer {
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.input {
+  width: 400px;
+  padding: 10px;
+  border-radius: $inputBorder;
+  border: none;
+}
+.button {
+  padding: 10px;
+  border: none;
+  margin-left: 10px;
+  background: #303030;
+  color: white;
+  border-radius: $inputBorder;
+}
+.button:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+.faceDetector {
+  width: 400px;
+  height: auto;
+  box-shadow: 10px, 10px, 20px, 0px black;
+}
+table {
+  width: 400px;
+  border-collapse: collapse;
+  box-shadow: 10px, 10px, 20px, 0px;
+
+  th {
+    text-align: left;
+    background: #303030;
+    color: white;
+    padding: 5px;
+  }
+  td {
+    padding: 5px;
+  }
+
+  tr:nth-child(even) {
+    background: #303030;
+    color: white;
+  }
+  tr:nth-child(odd) {
+    background: #e2e2e2;
+  }
+}
